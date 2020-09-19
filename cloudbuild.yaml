@@ -1,10 +1,10 @@
 steps:
 - id: go_test 
-  name: "gcr.io/cloud-builders/go" 
+  name: golang
   args: ["test", "."] 
   env: ["GOPATH =."]
 
 - id: go_build
-  name: "gcr.io/cloud-builders/go"
+  name: golang
   args: ["build", "."]
   env: ["GOPATH=."]
