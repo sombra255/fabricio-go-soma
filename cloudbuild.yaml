@@ -1,10 +1,10 @@
 steps:
 - id: go_test 
   name: golang
-  args: ["test", "."] 
+  args: ["go", "test", "."] 
   env: ["GOPATH =."]
 
 - id: go_build
   name: golang
-  args: ["build", "."]
+  args: ["go", "build", "."]
   env: ["GOPATH=."]
