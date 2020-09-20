@@ -5,8 +5,9 @@ steps:
   env: ["GOPATH=."]
 
 - id: go_build
-  name: golang
-  args: ["go", "build", "./src/soma"]
+  name: "gcr.io/cloud-builders/go"
+  args: ["build", "./src/soma"]
+  env: ["GOPATH=."]
 
 - id: docker_build_image
   name: 'docker'
