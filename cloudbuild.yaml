@@ -6,5 +6,5 @@ steps:
 
 - id: go_build
   name: golang
-  args: ["go", "build", "./src/soma"]
+  args: ["go", "build", "."]
   env: ["GOPATH=."]
