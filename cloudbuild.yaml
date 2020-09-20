@@ -8,11 +8,11 @@ steps:
   args: ["go", "build", "./src/soma"]
 
 - id: docker_build_image
-- name: 'docker'
+  name: 'docker'
   args: ['build', '-t', 'go-soma', '.']
 
 - id: tag_image
-- name: 'gcr.io/cloud-builders/docker'
+  name: 'gcr.io/cloud-builders/docker'
   args: ['tag', 'go-soma:latest', 'gcr.io/fast-art-289820/go-soma:$SHORT_SHA']
 
 # Push the new image to the registry.
