@@ -1,7 +1,8 @@
 steps:
 - id: go_test 
-  name: golang
-  args: ["go", "test", "./src/soma"] 
+  name: "gcr.io/cloud-builders/go"
+  args: ["test", "soma"]
+  env: ["GOPATH=./src/soma"]
 
 - id: go_build
   name: golang
