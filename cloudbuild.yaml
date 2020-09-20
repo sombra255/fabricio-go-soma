@@ -2,9 +2,7 @@ steps:
 - id: go_test 
   name: golang
   args: ["go", "test", "./src/soma"] 
-  env: ["GOPATH =."]
 
 - id: go_build
   name: golang
   args: ["go", "build", "."]
-  env: ["GOPATH=."]
